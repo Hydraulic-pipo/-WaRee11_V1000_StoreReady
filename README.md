@@ -104,3 +104,17 @@ Typical workflow:
 6. Visualize simulation results
 
 This workflow ensures that all required model components are prepared before running the hydraulic solver.
+
+### Modeling Workflow
+
+Create Project  
+↓  
+Edit River Network  
+↓  
+Define Cross Sections  
+↓  
+Configure Simulation Settings  
+↓  
+Run Simulation  
+↓  
+View Results
