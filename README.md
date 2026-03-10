@@ -88,3 +88,19 @@ Simulation outputs can be visualized through:
 - discharge vs time graphs
 - node-based result selection
 - tabular data output
+---
+
+# Application Workflow
+
+The WaRee11 modeling process follows a structured hydraulic modeling workflow similar to traditional river simulation tools.
+
+Typical workflow:
+
+1. Create a new project
+2. Define the river network
+3. Input cross-section geometry
+4. Configure simulation settings
+5. Run the hydraulic simulation
+6. Visualize simulation results
+
+This workflow ensures that all required model components are prepared before running the hydraulic solver.
