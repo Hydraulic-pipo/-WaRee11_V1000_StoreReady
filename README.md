@@ -118,3 +118,90 @@ Configure Simulation Settings
 Run Simulation  
 ↓  
 View Results
+
+---
+
+# Project Structure
+
+The WaRee11 project follows a modular architecture where each component of the hydraulic modeling workflow is separated into dedicated modules.
+WaRee11
+│
+├── Project
+│   └── ProjectManager.swift
+│
+├── RiverNetwork
+│   ├── RiverNodeMap.swift
+│   └── EditRiverNetworkViewController.swift
+│
+├── CrossSection
+│   ├── CrossSectionModels.swift
+│   ├── CrossSectionViewController.swift
+│   └── CrossSectionChartView.swift
+│
+├── RatingCurve
+│   ├── RatingCurveViewController.swift
+│   └── RatingCurveResult.swift
+│
+├── Simulation
+│   ├── SimulationSettings.swift
+│   ├── SimulationSettingsManager.swift
+│   └── SimulationRunnerViewController.swift
+│
+├── Solver
+│   ├── SolverManager.swift
+│   ├── SolverPreCalculator.swift
+│   └── SolverResult.swift
+│
+└── Results
+    ├── ResultsManager.swift
+    └── ResultsViewController.swift
+
+### Module Description
+
+**Project**
+Handles project creation, loading, and saving.
+
+**RiverNetwork**
+Manages the river topology including nodes and river connections.
+
+**CrossSection**
+Handles cross-section geometry input and visualization.
+
+**RatingCurve**
+Calculates discharge-water level relationships using hydraulic equations.
+
+**Simulation**
+Stores and manages simulation parameters such as time step, solver scheme, and boundary conditions.
+
+**Solver**
+Contains the hydraulic computation engine that solves the Saint-Venant equations.
+
+**Results**
+Handles storage and visualization of simulation results.
+
+---
+
+# Technology Stack
+
+The WaRee11 application is built using modern iOS development tools and numerical modeling techniques.
+
+### Platform
+- iPadOS
+
+### Programming Language
+- Swift
+
+### UI Framework
+- UIKit
+- Storyboard-based interface design
+
+### Mapping
+- MapKit for river node placement and geographic visualization
+
+### Numerical Modeling
+- Finite difference solver for the Saint-Venant equations
+- Explicit time-stepping schemes
+
+### Implemented Numerical Schemes
+- MacCormack predictor–corrector method
+- Lax-Wendroff scheme
